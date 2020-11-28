@@ -1,0 +1,1837 @@
+2020-11-27 17:31:05.470162 (MainThread): Running with dbt=0.18.1
+2020-11-27 17:31:05.590688 (MainThread): Loading KWallet
+2020-11-27 17:31:05.591813 (MainThread): Loading SecretService
+2020-11-27 17:31:05.592627 (MainThread): Loading Windows
+2020-11-27 17:31:05.593617 (MainThread): Loading chainer
+2020-11-27 17:31:05.594263 (MainThread): Loading macOS
+2020-11-27 17:31:06.151523 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/tgraham/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2020-11-27 17:31:06.153178 (MainThread): Tracking: tracking
+2020-11-27 17:31:06.153543 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048ccf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104accb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104accd30>]}
+2020-11-27 17:31:06.183129 (MainThread): Partial parsing not enabled
+2020-11-27 17:31:06.185291 (MainThread): Parsing macros/catalog.sql
+2020-11-27 17:31:06.188550 (MainThread): Parsing macros/adapters.sql
+2020-11-27 17:31:06.226784 (MainThread): Parsing macros/materializations/merge.sql
+2020-11-27 17:31:06.229617 (MainThread): Parsing macros/materializations/view.sql
+2020-11-27 17:31:06.231693 (MainThread): Parsing macros/materializations/table.sql
+2020-11-27 17:31:06.236911 (MainThread): Parsing macros/materializations/incremental.sql
+2020-11-27 17:31:06.251851 (MainThread): Parsing macros/core.sql
+2020-11-27 17:31:06.256840 (MainThread): Parsing macros/materializations/helpers.sql
+2020-11-27 17:31:06.268226 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-27 17:31:06.270996 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-27 17:31:06.292457 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-27 17:31:06.328193 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-11-27 17:31:06.354052 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-11-27 17:31:06.356734 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-11-27 17:31:06.364718 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-11-27 17:31:06.383391 (MainThread): Parsing macros/materializations/table/table.sql
+2020-11-27 17:31:06.392096 (MainThread): Parsing macros/materializations/view/view.sql
+2020-11-27 17:31:06.400235 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-27 17:31:06.406780 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-11-27 17:31:06.408292 (MainThread): Parsing macros/etc/query.sql
+2020-11-27 17:31:06.409793 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-11-27 17:31:06.412041 (MainThread): Parsing macros/etc/datetime.sql
+2020-11-27 17:31:06.423229 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-11-27 17:31:06.425820 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-11-27 17:31:06.428189 (MainThread): Parsing macros/adapters/common.sql
+2020-11-27 17:31:06.485465 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-11-27 17:31:06.488088 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-11-27 17:31:06.490131 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-11-27 17:31:06.492348 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-11-27 17:31:06.501701 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - crypto_package
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+
+2020-11-27 17:31:06.501970 (MainThread): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '98fc96a6-9edd-4bc4-985e-d916eaed1719', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048ccf70>]}
+2020-11-27 17:31:06.502678 (MainThread): Partial parsing not enabled
+2020-11-27 17:31:06.568639 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-27 17:31:06.603517 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-27 17:31:06.619871 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-27 17:31:06.632094 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-27 17:31:06.640369 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-27 17:31:06.648690 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-27 17:31:06.658695 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-27 17:31:06.667225 (MainThread): Acquiring new snowflake connection "model.crypto_package.analytics_view".
+2020-11-27 17:31:06.691627 (MainThread): Acquiring new snowflake connection "test.crypto_package.assert_averages_are_unique".
+2020-11-27 17:31:06.829220 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105614e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057ce520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057cedf0>]}
+2020-11-27 17:31:06.829560 (MainThread): Flushing usage events
+2020-11-27 17:31:07.806233 (MainThread): Connection 'test.crypto_package.assert_averages_are_unique' was properly closed.
+2020-11-27 17:31:07.806453 (MainThread): Encountered an error:
+2020-11-27 17:31:07.806583 (MainThread): Compilation Error
+  Invalid test config given in models/tpc_h/schema.yml:
+  	test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+  	@: UnparsedNodeUpdate(original_file_path='model...ne)
+2020-11-27 17:31:07.812452 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 369, in _parse_generic_test
+    builder = TestBuilder(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schema_test_builders.py", line 197, in __init__
+    test_name, test_args = self.extract_test_args(test, column_name)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schema_test_builders.py", line 253, in extract_test_args
+    raise_compiler_error(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 124, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 202, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 255, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 399, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 118, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 78, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 65, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 748, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 349, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 204, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 177, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 133, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 558, in parse_file
+    self.parse_tests(test_block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 519, in parse_tests
+    self.parse_column_tests(block, column)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in parse_column_tests
+    self.parse_test(block, test, column)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 515, in parse_test
+    self.parse_node(block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 461, in parse_node
+    node = self._parse_generic_test(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 383, in _parse_generic_test
+    raise CompilationException(msg) from exc
+dbt.exceptions.CompilationException: Compilation Error
+  Invalid test config given in models/tpc_h/schema.yml:
+  	test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+  	@: UnparsedNodeUpdate(original_file_path='model...ne)
+
+2020-11-27 17:36:32.265898 (MainThread): Running with dbt=0.18.1
+2020-11-27 17:36:32.348910 (MainThread): Loading KWallet
+2020-11-27 17:36:32.349588 (MainThread): Loading SecretService
+2020-11-27 17:36:32.350156 (MainThread): Loading Windows
+2020-11-27 17:36:32.350848 (MainThread): Loading chainer
+2020-11-27 17:36:32.351213 (MainThread): Loading macOS
+2020-11-27 17:36:32.674725 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/tgraham/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-11-27 17:36:32.675996 (MainThread): Tracking: tracking
+2020-11-27 17:36:32.676310 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dbefa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fa84c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fa8e80>]}
+2020-11-27 17:36:32.702960 (MainThread): Partial parsing not enabled
+2020-11-27 17:36:32.704228 (MainThread): Parsing macros/catalog.sql
+2020-11-27 17:36:32.707034 (MainThread): Parsing macros/adapters.sql
+2020-11-27 17:36:32.742062 (MainThread): Parsing macros/materializations/merge.sql
+2020-11-27 17:36:32.744482 (MainThread): Parsing macros/materializations/view.sql
+2020-11-27 17:36:32.746257 (MainThread): Parsing macros/materializations/table.sql
+2020-11-27 17:36:32.751060 (MainThread): Parsing macros/materializations/incremental.sql
+2020-11-27 17:36:32.764742 (MainThread): Parsing macros/core.sql
+2020-11-27 17:36:32.769298 (MainThread): Parsing macros/materializations/helpers.sql
+2020-11-27 17:36:32.779786 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-27 17:36:32.781934 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-27 17:36:32.803703 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-27 17:36:32.839229 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-11-27 17:36:32.865916 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-11-27 17:36:32.868240 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-11-27 17:36:32.876327 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-11-27 17:36:32.894720 (MainThread): Parsing macros/materializations/table/table.sql
+2020-11-27 17:36:32.902883 (MainThread): Parsing macros/materializations/view/view.sql
+2020-11-27 17:36:32.910626 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-27 17:36:32.916639 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-11-27 17:36:32.917833 (MainThread): Parsing macros/etc/query.sql
+2020-11-27 17:36:32.919099 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-11-27 17:36:32.921047 (MainThread): Parsing macros/etc/datetime.sql
+2020-11-27 17:36:32.931763 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-11-27 17:36:32.934190 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-11-27 17:36:32.936206 (MainThread): Parsing macros/adapters/common.sql
+2020-11-27 17:36:32.988563 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-11-27 17:36:32.990849 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-11-27 17:36:32.992599 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-11-27 17:36:32.994541 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-11-27 17:36:33.003472 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - crypto_package
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+
+2020-11-27 17:36:33.003671 (MainThread): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0d27e10a-b255-4558-a4a4-d12a4e57a0db', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dbefa0>]}
+2020-11-27 17:36:33.004253 (MainThread): Partial parsing not enabled
+2020-11-27 17:36:33.052992 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-27 17:36:33.074070 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-27 17:36:33.082759 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-27 17:36:33.089592 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-27 17:36:33.096816 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-27 17:36:33.105101 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-27 17:36:33.114258 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-27 17:36:33.122744 (MainThread): Acquiring new snowflake connection "model.crypto_package.analytics_view".
+2020-11-27 17:36:33.141868 (MainThread): Acquiring new snowflake connection "test.crypto_package.assert_averages_are_unique".
+2020-11-27 17:36:33.258997 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107af7b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cc8580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cc8fa0>]}
+2020-11-27 17:36:33.259283 (MainThread): Flushing usage events
+2020-11-27 17:36:33.807195 (MainThread): Connection 'test.crypto_package.assert_averages_are_unique' was properly closed.
+2020-11-27 17:36:33.807421 (MainThread): Encountered an error:
+2020-11-27 17:36:33.807560 (MainThread): Compilation Error
+  Invalid test config given in models/tpc_h/schema.yml:
+  	test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+  	@: UnparsedNodeUpdate(original_file_path='model...ne)
+2020-11-27 17:36:33.809469 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 369, in _parse_generic_test
+    builder = TestBuilder(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schema_test_builders.py", line 197, in __init__
+    test_name, test_args = self.extract_test_args(test, column_name)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schema_test_builders.py", line 253, in extract_test_args
+    raise_compiler_error(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 124, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 202, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 255, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 399, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 118, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 78, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 65, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 748, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 349, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 204, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 177, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 133, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 558, in parse_file
+    self.parse_tests(test_block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 519, in parse_tests
+    self.parse_column_tests(block, column)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in parse_column_tests
+    self.parse_test(block, test, column)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 515, in parse_test
+    self.parse_node(block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 461, in parse_node
+    node = self._parse_generic_test(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 383, in _parse_generic_test
+    raise CompilationException(msg) from exc
+dbt.exceptions.CompilationException: Compilation Error
+  Invalid test config given in models/tpc_h/schema.yml:
+  	test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+  	@: UnparsedNodeUpdate(original_file_path='model...ne)
+
+2020-11-27 18:05:54.512279 (MainThread): Running with dbt=0.18.1
+2020-11-27 18:05:54.639780 (MainThread): Loading KWallet
+2020-11-27 18:05:54.641241 (MainThread): Loading SecretService
+2020-11-27 18:05:54.642486 (MainThread): Loading Windows
+2020-11-27 18:05:54.643598 (MainThread): Loading chainer
+2020-11-27 18:05:54.644466 (MainThread): Loading macOS
+2020-11-27 18:05:55.257938 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/tgraham/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-11-27 18:05:55.259444 (MainThread): Tracking: tracking
+2020-11-27 18:05:55.259780 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc63a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10be4d5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10be4d9d0>]}
+2020-11-27 18:05:55.286938 (MainThread): Partial parsing not enabled
+2020-11-27 18:05:55.288980 (MainThread): Parsing macros/catalog.sql
+2020-11-27 18:05:55.292071 (MainThread): Parsing macros/adapters.sql
+2020-11-27 18:05:55.326703 (MainThread): Parsing macros/materializations/merge.sql
+2020-11-27 18:05:55.329721 (MainThread): Parsing macros/materializations/view.sql
+2020-11-27 18:05:55.332108 (MainThread): Parsing macros/materializations/table.sql
+2020-11-27 18:05:55.337482 (MainThread): Parsing macros/materializations/incremental.sql
+2020-11-27 18:05:55.351834 (MainThread): Parsing macros/core.sql
+2020-11-27 18:05:55.356770 (MainThread): Parsing macros/materializations/helpers.sql
+2020-11-27 18:05:55.367414 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-27 18:05:55.370058 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-27 18:05:55.389065 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-27 18:05:55.422733 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-11-27 18:05:55.451387 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-11-27 18:05:55.455991 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-11-27 18:05:55.465466 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-11-27 18:05:55.485740 (MainThread): Parsing macros/materializations/table/table.sql
+2020-11-27 18:05:55.493726 (MainThread): Parsing macros/materializations/view/view.sql
+2020-11-27 18:05:55.501007 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-27 18:05:55.506719 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-11-27 18:05:55.508001 (MainThread): Parsing macros/etc/query.sql
+2020-11-27 18:05:55.509392 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-11-27 18:05:55.511425 (MainThread): Parsing macros/etc/datetime.sql
+2020-11-27 18:05:55.521908 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-11-27 18:05:55.524320 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-11-27 18:05:55.526797 (MainThread): Parsing macros/adapters/common.sql
+2020-11-27 18:05:55.575942 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-11-27 18:05:55.579334 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-11-27 18:05:55.581827 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-11-27 18:05:55.584357 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-11-27 18:05:55.593398 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - crypto_package
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+
+2020-11-27 18:05:55.593603 (MainThread): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '57cf96be-020d-4ad5-9845-13e0084fb160', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc63a60>]}
+2020-11-27 18:05:55.594214 (MainThread): Partial parsing not enabled
+2020-11-27 18:05:55.641155 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-27 18:05:55.663709 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-27 18:05:55.673055 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-27 18:05:55.680989 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-27 18:05:55.687991 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-27 18:05:55.695924 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-27 18:05:55.705904 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-27 18:05:55.715125 (MainThread): Acquiring new snowflake connection "model.crypto_package.analytics_view".
+2020-11-27 18:05:55.734347 (MainThread): Acquiring new snowflake connection "test.crypto_package.assert_averages_are_unique".
+2020-11-27 18:05:55.856853 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c996970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cb64220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cb64d90>]}
+2020-11-27 18:05:55.857262 (MainThread): Flushing usage events
+2020-11-27 18:05:56.456650 (MainThread): Connection 'test.crypto_package.assert_averages_are_unique' was properly closed.
+2020-11-27 18:05:56.456921 (MainThread): Encountered an error:
+2020-11-27 18:05:56.457097 (MainThread): Compilation Error
+  Invalid test config given in models/tpc_h/schema.yml:
+  	test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+  	@: UnparsedNodeUpdate(original_file_path='model...ne)
+2020-11-27 18:05:56.466791 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 369, in _parse_generic_test
+    builder = TestBuilder(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schema_test_builders.py", line 197, in __init__
+    test_name, test_args = self.extract_test_args(test, column_name)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schema_test_builders.py", line 253, in extract_test_args
+    raise_compiler_error(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 124, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 202, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 255, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 399, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 118, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 78, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 65, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 748, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 349, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 204, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 177, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 133, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 558, in parse_file
+    self.parse_tests(test_block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 519, in parse_tests
+    self.parse_column_tests(block, column)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in parse_column_tests
+    self.parse_test(block, test, column)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 515, in parse_test
+    self.parse_node(block)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 461, in parse_node
+    node = self._parse_generic_test(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 383, in _parse_generic_test
+    raise CompilationException(msg) from exc
+dbt.exceptions.CompilationException: Compilation Error
+  Invalid test config given in models/tpc_h/schema.yml:
+  	test arguments must be dict, got <class 'list'> (value [{'to': "ref('customer_nation_region')", 'field': 'nation_key', 'severity': 'warn'}])
+  	@: UnparsedNodeUpdate(original_file_path='model...ne)
+
+2020-11-27 18:11:49.477588 (MainThread): Running with dbt=0.18.1
+2020-11-27 18:11:49.558003 (MainThread): Loading KWallet
+2020-11-27 18:11:49.558662 (MainThread): Loading SecretService
+2020-11-27 18:11:49.559143 (MainThread): Loading Windows
+2020-11-27 18:11:49.559773 (MainThread): Loading chainer
+2020-11-27 18:11:49.560094 (MainThread): Loading macOS
+2020-11-27 18:11:49.875005 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/tgraham/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-11-27 18:11:49.876412 (MainThread): Tracking: tracking
+2020-11-27 18:11:49.876805 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d6a0040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d88c4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d88c910>]}
+2020-11-27 18:11:49.903522 (MainThread): Partial parsing not enabled
+2020-11-27 18:11:49.904815 (MainThread): Parsing macros/catalog.sql
+2020-11-27 18:11:49.907593 (MainThread): Parsing macros/adapters.sql
+2020-11-27 18:11:49.941252 (MainThread): Parsing macros/materializations/merge.sql
+2020-11-27 18:11:49.943595 (MainThread): Parsing macros/materializations/view.sql
+2020-11-27 18:11:49.945284 (MainThread): Parsing macros/materializations/table.sql
+2020-11-27 18:11:49.949878 (MainThread): Parsing macros/materializations/incremental.sql
+2020-11-27 18:11:49.962714 (MainThread): Parsing macros/core.sql
+2020-11-27 18:11:49.967182 (MainThread): Parsing macros/materializations/helpers.sql
+2020-11-27 18:11:49.977194 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-27 18:11:49.979213 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-27 18:11:49.997866 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-27 18:11:50.030454 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-11-27 18:11:50.053557 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-11-27 18:11:50.055621 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-11-27 18:11:50.062530 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-11-27 18:11:50.078423 (MainThread): Parsing macros/materializations/table/table.sql
+2020-11-27 18:11:50.086105 (MainThread): Parsing macros/materializations/view/view.sql
+2020-11-27 18:11:50.093256 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-27 18:11:50.098751 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-11-27 18:11:50.099807 (MainThread): Parsing macros/etc/query.sql
+2020-11-27 18:11:50.100993 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-11-27 18:11:50.102857 (MainThread): Parsing macros/etc/datetime.sql
+2020-11-27 18:11:50.112747 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-11-27 18:11:50.114981 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-11-27 18:11:50.116845 (MainThread): Parsing macros/adapters/common.sql
+2020-11-27 18:11:50.164810 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-11-27 18:11:50.166951 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-11-27 18:11:50.168682 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-11-27 18:11:50.170594 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-11-27 18:11:50.179332 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - crypto_package
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+
+2020-11-27 18:11:50.179521 (MainThread): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '763cde65-2fa3-4bef-8bf7-75a0c9518c20', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d6a0040>]}
+2020-11-27 18:11:50.180111 (MainThread): Partial parsing not enabled
+2020-11-27 18:11:50.229139 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-27 18:11:50.249687 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-27 18:11:50.258948 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-27 18:11:50.265506 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-27 18:11:50.272460 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-27 18:11:50.279852 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-27 18:11:50.288087 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-27 18:11:50.295393 (MainThread): Acquiring new snowflake connection "model.crypto_package.analytics_view".
+2020-11-27 18:11:50.313761 (MainThread): Acquiring new snowflake connection "test.crypto_package.assert_averages_are_unique".
+2020-11-27 18:11:50.623880 (MainThread): Found 8 models, 9 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources
+2020-11-27 18:11:50.625402 (MainThread): 
+2020-11-27 18:11:50.625753 (MainThread): Acquiring new snowflake connection "master".
+2020-11-27 18:11:50.630027 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SNOWFLAKE_SAMPLE_DATA".
+2020-11-27 18:11:50.644923 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SNOWFLAKE_SAMPLE_DATA".
+2020-11-27 18:11:50.645095 (ThreadPoolExecutor-0_0): On list_SNOWFLAKE_SAMPLE_DATA: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "connection_name": "list_SNOWFLAKE_SAMPLE_DATA"} */
+
+    show terse schemas in database SNOWFLAKE_SAMPLE_DATA
+    limit 10000
+2020-11-27 18:11:50.645193 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-11-27 18:11:52.175233 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 1.53 seconds
+2020-11-27 18:11:52.179393 (ThreadPoolExecutor-0_0): On list_SNOWFLAKE_SAMPLE_DATA: Close
+2020-11-27 18:11:52.348707 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1".
+2020-11-27 18:11:52.356296 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1".
+2020-11-27 18:11:52.356474 (ThreadPoolExecutor-1_0): On list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "connection_name": "list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1"} */
+
+    show terse objects in SNOWFLAKE_SAMPLE_DATA.TPCH_SF1
+2020-11-27 18:11:52.356574 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-11-27 18:11:52.867498 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 0.51 seconds
+2020-11-27 18:11:52.877989 (ThreadPoolExecutor-1_0): On list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1: Close
+2020-11-27 18:11:53.027013 (MainThread): Using snowflake connection "master".
+2020-11-27 18:11:53.027220 (MainThread): On master: BEGIN
+2020-11-27 18:11:53.027333 (MainThread): Opening a new connection, currently in state init
+2020-11-27 18:11:53.855831 (MainThread): SQL status: SUCCESS 1 in 0.83 seconds
+2020-11-27 18:11:53.856163 (MainThread): On master: COMMIT
+2020-11-27 18:11:53.856477 (MainThread): Using snowflake connection "master".
+2020-11-27 18:11:53.856654 (MainThread): On master: COMMIT
+2020-11-27 18:11:54.058852 (MainThread): SQL status: SUCCESS 1 in 0.20 seconds
+2020-11-27 18:11:54.059117 (MainThread): On master: Close
+2020-11-27 18:11:54.183727 (MainThread): 10:11:54 | Concurrency: 1 threads (target='dev')
+2020-11-27 18:11:54.183992 (MainThread): 10:11:54 | 
+2020-11-27 18:11:54.190396 (Thread-1): Began running node model.crypto_package.customer_nation_region
+2020-11-27 18:11:54.190886 (Thread-1): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-27 18:11:54.191040 (Thread-1): Compiling model.crypto_package.customer_nation_region
+2020-11-27 18:11:54.215922 (Thread-1): Writing injected SQL for node "model.crypto_package.customer_nation_region"
+2020-11-27 18:11:54.216698 (Thread-1): finished collecting timing info
+2020-11-27 18:11:54.217173 (Thread-1): Finished running node model.crypto_package.customer_nation_region
+2020-11-27 18:11:54.217316 (Thread-1): Began running node model.crypto_package.supplier_parts
+2020-11-27 18:11:54.217950 (Thread-1): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-27 18:11:54.218205 (Thread-1): Compiling model.crypto_package.supplier_parts
+2020-11-27 18:11:54.232351 (Thread-1): Writing injected SQL for node "model.crypto_package.supplier_parts"
+2020-11-27 18:11:54.232990 (Thread-1): finished collecting timing info
+2020-11-27 18:11:54.233717 (Thread-1): Finished running node model.crypto_package.supplier_parts
+2020-11-27 18:11:54.233915 (Thread-1): Began running node model.crypto_package.average_acctbal_by_nation
+2020-11-27 18:11:54.234383 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-27 18:11:54.234685 (Thread-1): Compiling model.crypto_package.average_acctbal_by_nation
+2020-11-27 18:11:54.246258 (Thread-1): Writing injected SQL for node "model.crypto_package.average_acctbal_by_nation"
+2020-11-27 18:11:54.246855 (Thread-1): finished collecting timing info
+2020-11-27 18:11:54.247499 (Thread-1): Finished running node model.crypto_package.average_acctbal_by_nation
+2020-11-27 18:11:54.247714 (Thread-1): Began running node model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-27 18:11:54.248187 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-27 18:11:54.248440 (Thread-1): Compiling model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-27 18:11:54.261119 (Thread-1): Writing injected SQL for node "model.crypto_package.average_supply_cost_and_available_quantity_per_part"
+2020-11-27 18:11:54.261628 (Thread-1): finished collecting timing info
+2020-11-27 18:11:54.262118 (Thread-1): Finished running node model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-27 18:11:54.262284 (Thread-1): Began running node model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-27 18:11:54.262763 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-27 18:11:54.262898 (Thread-1): Compiling model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-27 18:11:54.273851 (Thread-1): Writing injected SQL for node "model.crypto_package.average_account_balance_by_part_and_supplier"
+2020-11-27 18:11:54.274315 (Thread-1): finished collecting timing info
+2020-11-27 18:11:54.274755 (Thread-1): Finished running node model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-27 18:11:54.274914 (Thread-1): Began running node model.crypto_package.customer_nation_region_aggregates
+2020-11-27 18:11:54.275974 (Thread-1): 10:11:54 | 1 of 3 START table model TPCH_SF1.customer_nation_region_aggregates.. [RUN]
+2020-11-27 18:11:54.276255 (Thread-1): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-27 18:11:54.276367 (Thread-1): Compiling model.crypto_package.customer_nation_region_aggregates
+2020-11-27 18:11:54.289701 (Thread-1): Writing injected SQL for node "model.crypto_package.customer_nation_region_aggregates"
+2020-11-27 18:11:54.290209 (Thread-1): finished collecting timing info
+2020-11-27 18:11:54.324950 (Thread-1): Writing runtime SQL for node "model.crypto_package.customer_nation_region_aggregates"
+2020-11-27 18:11:54.328254 (Thread-1): Using snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-27 18:11:54.328399 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: BEGIN
+2020-11-27 18:11:54.328512 (Thread-1): Opening a new connection, currently in state closed
+2020-11-27 18:11:54.828944 (Thread-1): SQL status: SUCCESS 1 in 0.50 seconds
+2020-11-27 18:11:54.829266 (Thread-1): Using snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-27 18:11:54.829447 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "node_id": "model.crypto_package.customer_nation_region_aggregates"} */
+
+
+      create or replace transient table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer_nation_region_aggregates  as
+      (with __dbt__CTE__customer_nation_region as (
+/*
+Modifications © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+With customer_nation_region as (
+  SELECT * from snowflake_sample_data.tpch_sf1.customer
+    JOIN snowflake_sample_data.tpch_sf1.nation
+        ON n_nationkey=c_nationkey
+            JOIN snowflake_sample_data.tpch_sf1.region
+                ON n_regionkey=r_regionkey
+)
+
+SELECT
+r_name as region,
+n_name as nation,
+n_nationkey as nation_key,
+c_name as customer_name,
+c_acctbal as account_balance,
+c_mktsegment as market_segment
+    FROM customer_nation_region
+),  __dbt__CTE__average_acctbal_by_nation as (
+/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+SELECT
+nation_key,
+avg(account_balance) as average_account_balance
+    FROM __dbt__CTE__customer_nation_region
+        GROUP BY
+        nation_key
+)/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+SELECT
+cnr.*,
+aabn.average_account_balance as avg_acct_bal_by_nation
+    FROM __dbt__CTE__customer_nation_region as cnr
+        JOIN __dbt__CTE__average_acctbal_by_nation as aabn
+        ON
+        aabn.nation_key = cnr.nation_key
+      );
+2020-11-27 18:11:54.951841 (Thread-1): Snowflake query id: 01988de3-0420-2f33-0000-001ebb8371a9
+2020-11-27 18:11:54.952112 (Thread-1): Snowflake error: 003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+2020-11-27 18:11:54.952399 (Thread-1): finished collecting timing info
+2020-11-27 18:11:54.952941 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: ROLLBACK
+2020-11-27 18:11:55.114569 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: Close
+2020-11-27 18:11:55.246572 (Thread-1): Database Error in model customer_nation_region_aggregates (models/tpc_h/customer_nation_region_aggregates.sql)
+  003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+  compiled SQL at dev/run/crypto_package/models/tpc_h/customer_nation_region_aggregates.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 161, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 78, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 594, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 123, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 83, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 123, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 309, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 86, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 178, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model customer_nation_region_aggregates (models/tpc_h/customer_nation_region_aggregates.sql)
+  003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+  compiled SQL at dev/run/crypto_package/models/tpc_h/customer_nation_region_aggregates.sql
+2020-11-27 18:11:55.262636 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '763cde65-2fa3-4bef-8bf7-75a0c9518c20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e47cc10>]}
+2020-11-27 18:11:55.264321 (Thread-1): 10:11:55 | 1 of 3 ERROR creating table model TPCH_SF1.customer_nation_region_aggregates [ERROR in 0.99s]
+2020-11-27 18:11:55.264505 (Thread-1): Finished running node model.crypto_package.customer_nation_region_aggregates
+2020-11-27 18:11:55.264686 (Thread-1): Began running node model.crypto_package.supplier_parts_aggregates
+2020-11-27 18:11:55.265868 (Thread-1): 10:11:55 | 2 of 3 START table model TPCH_SF1.supplier_parts_aggregates.......... [RUN]
+2020-11-27 18:11:55.266390 (Thread-1): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-27 18:11:55.266532 (Thread-1): Compiling model.crypto_package.supplier_parts_aggregates
+2020-11-27 18:11:55.279958 (Thread-1): Writing injected SQL for node "model.crypto_package.supplier_parts_aggregates"
+2020-11-27 18:11:55.280403 (Thread-1): finished collecting timing info
+2020-11-27 18:11:55.285087 (Thread-1): Writing runtime SQL for node "model.crypto_package.supplier_parts_aggregates"
+2020-11-27 18:11:55.288957 (Thread-1): Using snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-27 18:11:55.289152 (Thread-1): On model.crypto_package.supplier_parts_aggregates: BEGIN
+2020-11-27 18:11:55.289288 (Thread-1): Opening a new connection, currently in state closed
+2020-11-27 18:11:55.875804 (Thread-1): SQL status: SUCCESS 1 in 0.59 seconds
+2020-11-27 18:11:55.876121 (Thread-1): Using snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-27 18:11:55.876300 (Thread-1): On model.crypto_package.supplier_parts_aggregates: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "node_id": "model.crypto_package.supplier_parts_aggregates"} */
+
+
+      create or replace transient table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier_parts_aggregates  as
+      (with __dbt__CTE__supplier_parts as (
+/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+With supplier_parts as (
+  SELECT * from snowflake_sample_data.tpch_sf1.supplier
+    JOIN snowflake_sample_data.tpch_sf1.partsupp
+        ON s_suppkey=ps_suppkey
+            JOIN snowflake_sample_data.tpch_sf1.part
+                ON ps_partkey=p_partkey
+)
+
+SELECT
+s_suppkey as supplier_key,
+s_name as supplier_name,
+s_nationkey as nation_key,
+s_acctbal as account_balance,
+ps_availqty as available_quantity,
+ps_supplycost as supply_cost,
+p_partkey as part_key,
+p_name as part_name,
+p_mfgr as part_manufacturer,
+p_brand as part_brand,
+p_type as part_type,
+p_size as part_size,
+p_container as part_container,
+p_retailprice as part_retail_price
+    FROM supplier_parts
+),  __dbt__CTE__average_supply_cost_and_available_quantity_per_part as (
+/*
+Modifications © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+SELECT
+part_key,
+avg(available_quantity) as average_available_quantity,
+avg(supply_cost) as average_supply_cost
+    FROM __dbt__CTE__supplier_parts
+        GROUP BY
+        part_key
+)/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+SELECT
+sp.*,
+ascaqsp.average_available_quantity,
+ascaqsp.average_supply_cost
+    FROM __dbt__CTE__supplier_parts as sp
+        JOIN __dbt__CTE__average_supply_cost_and_available_quantity_per_part as ascaqsp
+        ON
+        ascaqsp.part_key = sp.part_key
+      );
+2020-11-27 18:11:56.022370 (Thread-1): Snowflake query id: 01988de3-042c-d8f9-0000-001ebb8331ad
+2020-11-27 18:11:56.022523 (Thread-1): Snowflake error: 003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+2020-11-27 18:11:56.022696 (Thread-1): finished collecting timing info
+2020-11-27 18:11:56.022998 (Thread-1): On model.crypto_package.supplier_parts_aggregates: ROLLBACK
+2020-11-27 18:11:56.689295 (Thread-1): On model.crypto_package.supplier_parts_aggregates: Close
+2020-11-27 18:11:56.817842 (Thread-1): Database Error in model supplier_parts_aggregates (models/tpc_h/supplier_parts_aggregates.sql)
+  003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+  compiled SQL at dev/run/crypto_package/models/tpc_h/supplier_parts_aggregates.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 161, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 78, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 594, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 123, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 83, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 123, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 309, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 86, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 178, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model supplier_parts_aggregates (models/tpc_h/supplier_parts_aggregates.sql)
+  003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+  compiled SQL at dev/run/crypto_package/models/tpc_h/supplier_parts_aggregates.sql
+2020-11-27 18:11:56.818713 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '763cde65-2fa3-4bef-8bf7-75a0c9518c20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e492c10>]}
+2020-11-27 18:11:56.819964 (Thread-1): 10:11:56 | 2 of 3 ERROR creating table model TPCH_SF1.supplier_parts_aggregates. [ERROR in 1.55s]
+2020-11-27 18:11:56.820128 (Thread-1): Finished running node model.crypto_package.supplier_parts_aggregates
+2020-11-27 18:11:56.820849 (Thread-1): Began running node model.crypto_package.analytics_view
+2020-11-27 18:11:56.821111 (Thread-1): 10:11:56 | 3 of 3 SKIP relation TPCH_SF1.analytics_view......................... [SKIP]
+2020-11-27 18:11:56.821257 (Thread-1): Finished running node model.crypto_package.analytics_view
+2020-11-27 18:11:56.822312 (MainThread): Acquiring new snowflake connection "master".
+2020-11-27 18:11:56.822545 (MainThread): Using snowflake connection "master".
+2020-11-27 18:11:56.822634 (MainThread): On master: BEGIN
+2020-11-27 18:11:56.822727 (MainThread): Opening a new connection, currently in state closed
+2020-11-27 18:11:57.899609 (MainThread): SQL status: SUCCESS 1 in 1.08 seconds
+2020-11-27 18:11:57.899810 (MainThread): On master: COMMIT
+2020-11-27 18:11:57.899962 (MainThread): Using snowflake connection "master".
+2020-11-27 18:11:57.900045 (MainThread): On master: COMMIT
+2020-11-27 18:11:58.073010 (MainThread): SQL status: SUCCESS 1 in 0.17 seconds
+2020-11-27 18:11:58.073226 (MainThread): On master: Close
+2020-11-27 18:11:58.222548 (MainThread): 10:11:58 | 
+2020-11-27 18:11:58.222758 (MainThread): 10:11:58 | Finished running 2 table models, 1 view model in 7.60s.
+2020-11-27 18:11:58.222869 (MainThread): Connection 'master' was properly closed.
+2020-11-27 18:11:58.222950 (MainThread): Connection 'model.crypto_package.supplier_parts_aggregates' was properly closed.
+2020-11-27 18:11:58.232863 (MainThread): 
+2020-11-27 18:11:58.233212 (MainThread): Completed with 2 errors and 0 warnings:
+2020-11-27 18:11:58.233417 (MainThread): 
+2020-11-27 18:11:58.233549 (MainThread): Database Error in model customer_nation_region_aggregates (models/tpc_h/customer_nation_region_aggregates.sql)
+2020-11-27 18:11:58.233656 (MainThread):   003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+2020-11-27 18:11:58.233769 (MainThread):   compiled SQL at dev/run/crypto_package/models/tpc_h/customer_nation_region_aggregates.sql
+2020-11-27 18:11:58.233911 (MainThread): 
+2020-11-27 18:11:58.234074 (MainThread): Database Error in model supplier_parts_aggregates (models/tpc_h/supplier_parts_aggregates.sql)
+2020-11-27 18:11:58.234271 (MainThread):   003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+2020-11-27 18:11:58.234385 (MainThread):   compiled SQL at dev/run/crypto_package/models/tpc_h/supplier_parts_aggregates.sql
+2020-11-27 18:11:58.234522 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=2 SKIP=1 TOTAL=3
+2020-11-27 18:11:58.234748 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e94c220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e94cac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e94ceb0>]}
+2020-11-27 18:11:58.234967 (MainThread): Flushing usage events
+2020-11-28 05:01:03.126600 (MainThread): Running with dbt=0.18.1
+2020-11-28 05:01:03.244192 (MainThread): Loading KWallet
+2020-11-28 05:01:03.244912 (MainThread): Loading SecretService
+2020-11-28 05:01:03.245460 (MainThread): Loading Windows
+2020-11-28 05:01:03.246171 (MainThread): Loading chainer
+2020-11-28 05:01:03.246546 (MainThread): Loading macOS
+2020-11-28 05:01:03.680479 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/tgraham/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-11-28 05:01:03.682011 (MainThread): Tracking: tracking
+2020-11-28 05:01:03.682333 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9d66d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bbbf670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bbbfa90>]}
+2020-11-28 05:01:03.713671 (MainThread): Partial parsing not enabled
+2020-11-28 05:01:03.715314 (MainThread): Parsing macros/catalog.sql
+2020-11-28 05:01:03.718514 (MainThread): Parsing macros/adapters.sql
+2020-11-28 05:01:03.758467 (MainThread): Parsing macros/materializations/merge.sql
+2020-11-28 05:01:03.761242 (MainThread): Parsing macros/materializations/view.sql
+2020-11-28 05:01:03.763301 (MainThread): Parsing macros/materializations/table.sql
+2020-11-28 05:01:03.768743 (MainThread): Parsing macros/materializations/incremental.sql
+2020-11-28 05:01:03.783580 (MainThread): Parsing macros/core.sql
+2020-11-28 05:01:03.788105 (MainThread): Parsing macros/materializations/helpers.sql
+2020-11-28 05:01:03.798617 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-28 05:01:03.800734 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-28 05:01:03.820215 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-28 05:01:03.855081 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-11-28 05:01:03.880594 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-11-28 05:01:03.882974 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-11-28 05:01:03.890297 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-11-28 05:01:03.906663 (MainThread): Parsing macros/materializations/table/table.sql
+2020-11-28 05:01:03.914948 (MainThread): Parsing macros/materializations/view/view.sql
+2020-11-28 05:01:03.922375 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-28 05:01:03.928208 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-11-28 05:01:03.929392 (MainThread): Parsing macros/etc/query.sql
+2020-11-28 05:01:03.930774 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-11-28 05:01:03.932781 (MainThread): Parsing macros/etc/datetime.sql
+2020-11-28 05:01:03.943134 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-11-28 05:01:03.945550 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-11-28 05:01:03.947700 (MainThread): Parsing macros/adapters/common.sql
+2020-11-28 05:01:04.002319 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-11-28 05:01:04.005623 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-11-28 05:01:04.007457 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-11-28 05:01:04.009483 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-11-28 05:01:04.018761 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - crypto_package
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+
+2020-11-28 05:01:04.018991 (MainThread): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e518d755-db64-44ae-8c77-6bee3e06fd2c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9d66d0>]}
+2020-11-28 05:01:04.019680 (MainThread): Partial parsing not enabled
+2020-11-28 05:01:04.068355 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-28 05:01:04.090132 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:01:04.099285 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-28 05:01:04.106585 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-28 05:01:04.113672 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-28 05:01:04.121524 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:01:04.130499 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-28 05:01:04.138844 (MainThread): Acquiring new snowflake connection "model.crypto_package.analytics_view".
+2020-11-28 05:01:04.158498 (MainThread): Acquiring new snowflake connection "test.crypto_package.assert_averages_are_unique".
+2020-11-28 05:01:04.491073 (MainThread): Found 8 models, 9 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources
+2020-11-28 05:01:04.492636 (MainThread): 
+2020-11-28 05:01:04.493046 (MainThread): Acquiring new snowflake connection "master".
+2020-11-28 05:01:04.497266 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SNOWFLAKE_SAMPLE_DATA".
+2020-11-28 05:01:04.512621 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SNOWFLAKE_SAMPLE_DATA".
+2020-11-28 05:01:04.512798 (ThreadPoolExecutor-0_0): On list_SNOWFLAKE_SAMPLE_DATA: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "connection_name": "list_SNOWFLAKE_SAMPLE_DATA"} */
+
+    show terse schemas in database SNOWFLAKE_SAMPLE_DATA
+    limit 10000
+2020-11-28 05:01:04.512915 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-11-28 05:01:05.542101 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 1.03 seconds
+2020-11-28 05:01:05.546312 (ThreadPoolExecutor-0_0): On list_SNOWFLAKE_SAMPLE_DATA: Close
+2020-11-28 05:01:05.708488 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1".
+2020-11-28 05:01:05.717102 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1".
+2020-11-28 05:01:05.717304 (ThreadPoolExecutor-1_0): On list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "connection_name": "list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1"} */
+
+    show terse objects in SNOWFLAKE_SAMPLE_DATA.TPCH_SF1
+2020-11-28 05:01:05.717444 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-11-28 05:01:06.645510 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 0.93 seconds
+2020-11-28 05:01:06.653039 (ThreadPoolExecutor-1_0): On list_SNOWFLAKE_SAMPLE_DATA_TPCH_SF1: Close
+2020-11-28 05:01:06.776888 (MainThread): Using snowflake connection "master".
+2020-11-28 05:01:06.777069 (MainThread): On master: BEGIN
+2020-11-28 05:01:06.777169 (MainThread): Opening a new connection, currently in state init
+2020-11-28 05:01:07.316203 (MainThread): SQL status: SUCCESS 1 in 0.54 seconds
+2020-11-28 05:01:07.316427 (MainThread): On master: COMMIT
+2020-11-28 05:01:07.316625 (MainThread): Using snowflake connection "master".
+2020-11-28 05:01:07.316731 (MainThread): On master: COMMIT
+2020-11-28 05:01:08.380995 (MainThread): SQL status: SUCCESS 1 in 1.06 seconds
+2020-11-28 05:01:08.381248 (MainThread): On master: Close
+2020-11-28 05:01:08.535692 (MainThread): 21:01:08 | Concurrency: 1 threads (target='dev')
+2020-11-28 05:01:08.535966 (MainThread): 21:01:08 | 
+2020-11-28 05:01:08.539408 (Thread-1): Began running node model.crypto_package.customer_nation_region
+2020-11-28 05:01:08.539830 (Thread-1): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-28 05:01:08.539995 (Thread-1): Compiling model.crypto_package.customer_nation_region
+2020-11-28 05:01:08.566406 (Thread-1): Writing injected SQL for node "model.crypto_package.customer_nation_region"
+2020-11-28 05:01:08.567239 (Thread-1): finished collecting timing info
+2020-11-28 05:01:08.568172 (Thread-1): Finished running node model.crypto_package.customer_nation_region
+2020-11-28 05:01:08.568432 (Thread-1): Began running node model.crypto_package.supplier_parts
+2020-11-28 05:01:08.569017 (Thread-1): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-28 05:01:08.569311 (Thread-1): Compiling model.crypto_package.supplier_parts
+2020-11-28 05:01:08.578658 (Thread-1): Writing injected SQL for node "model.crypto_package.supplier_parts"
+2020-11-28 05:01:08.579104 (Thread-1): finished collecting timing info
+2020-11-28 05:01:08.579534 (Thread-1): Finished running node model.crypto_package.supplier_parts
+2020-11-28 05:01:08.579697 (Thread-1): Began running node model.crypto_package.average_acctbal_by_nation
+2020-11-28 05:01:08.580130 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-28 05:01:08.580406 (Thread-1): Compiling model.crypto_package.average_acctbal_by_nation
+2020-11-28 05:01:08.591248 (Thread-1): Writing injected SQL for node "model.crypto_package.average_acctbal_by_nation"
+2020-11-28 05:01:08.591690 (Thread-1): finished collecting timing info
+2020-11-28 05:01:08.592113 (Thread-1): Finished running node model.crypto_package.average_acctbal_by_nation
+2020-11-28 05:01:08.592255 (Thread-1): Began running node model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-28 05:01:08.592603 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-28 05:01:08.592818 (Thread-1): Compiling model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-28 05:01:08.603962 (Thread-1): Writing injected SQL for node "model.crypto_package.average_supply_cost_and_available_quantity_per_part"
+2020-11-28 05:01:08.604506 (Thread-1): finished collecting timing info
+2020-11-28 05:01:08.605062 (Thread-1): Finished running node model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-28 05:01:08.605256 (Thread-1): Began running node model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-28 05:01:08.605701 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-28 05:01:08.605944 (Thread-1): Compiling model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-28 05:01:08.617577 (Thread-1): Writing injected SQL for node "model.crypto_package.average_account_balance_by_part_and_supplier"
+2020-11-28 05:01:08.618117 (Thread-1): finished collecting timing info
+2020-11-28 05:01:08.618675 (Thread-1): Finished running node model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-28 05:01:08.618857 (Thread-1): Began running node model.crypto_package.customer_nation_region_aggregates
+2020-11-28 05:01:08.619988 (Thread-1): 21:01:08 | 1 of 3 START table model TPCH_SF1.customer_nation_region_aggregates.. [RUN]
+2020-11-28 05:01:08.620349 (Thread-1): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:01:08.620472 (Thread-1): Compiling model.crypto_package.customer_nation_region_aggregates
+2020-11-28 05:01:08.636021 (Thread-1): Writing injected SQL for node "model.crypto_package.customer_nation_region_aggregates"
+2020-11-28 05:01:08.636537 (Thread-1): finished collecting timing info
+2020-11-28 05:01:08.672131 (Thread-1): Writing runtime SQL for node "model.crypto_package.customer_nation_region_aggregates"
+2020-11-28 05:01:08.675142 (Thread-1): Using snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:01:08.675272 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: BEGIN
+2020-11-28 05:01:08.675371 (Thread-1): Opening a new connection, currently in state closed
+2020-11-28 05:01:09.466024 (Thread-1): SQL status: SUCCESS 1 in 0.79 seconds
+2020-11-28 05:01:09.466262 (Thread-1): Using snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:01:09.466358 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "node_id": "model.crypto_package.customer_nation_region_aggregates"} */
+
+
+      create or replace transient table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer_nation_region_aggregates  as
+      (with __dbt__CTE__customer_nation_region as (
+/*
+Modifications © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+With customer_nation_region as (
+  SELECT * from snowflake_sample_data.tpch_sf1.customer
+    JOIN snowflake_sample_data.tpch_sf1.nation
+        ON n_nationkey=c_nationkey
+            JOIN snowflake_sample_data.tpch_sf1.region
+                ON n_regionkey=r_regionkey
+)
+
+SELECT
+r_name as region,
+n_name as nation,
+n_nationkey as nation_key,
+c_name as customer_name,
+c_acctbal as account_balance,
+c_mktsegment as market_segment
+    FROM customer_nation_region
+),  __dbt__CTE__average_acctbal_by_nation as (
+/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+SELECT
+nation_key,
+avg(account_balance) as average_account_balance
+    FROM __dbt__CTE__customer_nation_region
+        GROUP BY
+        nation_key
+)/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+SELECT
+cnr.*,
+aabn.average_account_balance as avg_acct_bal_by_nation
+    FROM __dbt__CTE__customer_nation_region as cnr
+        JOIN __dbt__CTE__average_acctbal_by_nation as aabn
+        ON
+        aabn.nation_key = cnr.nation_key
+      );
+2020-11-28 05:01:09.614790 (Thread-1): Snowflake query id: 0198906d-046e-67af-0000-001ebb837241
+2020-11-28 05:01:09.615085 (Thread-1): Snowflake error: 003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+2020-11-28 05:01:09.615392 (Thread-1): finished collecting timing info
+2020-11-28 05:01:09.615950 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: ROLLBACK
+2020-11-28 05:01:09.796725 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: Close
+2020-11-28 05:01:09.991837 (Thread-1): Database Error in model customer_nation_region_aggregates (models/tpc_h/customer_nation_region_aggregates.sql)
+  003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+  compiled SQL at dev/run/crypto_package/models/tpc_h/customer_nation_region_aggregates.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 161, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 78, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 594, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 123, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 83, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 123, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 309, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 86, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 178, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model customer_nation_region_aggregates (models/tpc_h/customer_nation_region_aggregates.sql)
+  003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+  compiled SQL at dev/run/crypto_package/models/tpc_h/customer_nation_region_aggregates.sql
+2020-11-28 05:01:10.001915 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e518d755-db64-44ae-8c77-6bee3e06fd2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c7ceb50>]}
+2020-11-28 05:01:10.003243 (Thread-1): 21:01:10 | 1 of 3 ERROR creating table model TPCH_SF1.customer_nation_region_aggregates [ERROR in 1.38s]
+2020-11-28 05:01:10.003403 (Thread-1): Finished running node model.crypto_package.customer_nation_region_aggregates
+2020-11-28 05:01:10.003572 (Thread-1): Began running node model.crypto_package.supplier_parts_aggregates
+2020-11-28 05:01:10.004758 (Thread-1): 21:01:10 | 2 of 3 START table model TPCH_SF1.supplier_parts_aggregates.......... [RUN]
+2020-11-28 05:01:10.005122 (Thread-1): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:01:10.005252 (Thread-1): Compiling model.crypto_package.supplier_parts_aggregates
+2020-11-28 05:01:10.017433 (Thread-1): Writing injected SQL for node "model.crypto_package.supplier_parts_aggregates"
+2020-11-28 05:01:10.018021 (Thread-1): finished collecting timing info
+2020-11-28 05:01:10.023007 (Thread-1): Writing runtime SQL for node "model.crypto_package.supplier_parts_aggregates"
+2020-11-28 05:01:10.027088 (Thread-1): Using snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:01:10.027305 (Thread-1): On model.crypto_package.supplier_parts_aggregates: BEGIN
+2020-11-28 05:01:10.027433 (Thread-1): Opening a new connection, currently in state closed
+2020-11-28 05:01:10.944412 (Thread-1): SQL status: SUCCESS 1 in 0.92 seconds
+2020-11-28 05:01:10.944634 (Thread-1): Using snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:01:10.944754 (Thread-1): On model.crypto_package.supplier_parts_aggregates: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "node_id": "model.crypto_package.supplier_parts_aggregates"} */
+
+
+      create or replace transient table SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.supplier_parts_aggregates  as
+      (with __dbt__CTE__supplier_parts as (
+/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+With supplier_parts as (
+  SELECT * from snowflake_sample_data.tpch_sf1.supplier
+    JOIN snowflake_sample_data.tpch_sf1.partsupp
+        ON s_suppkey=ps_suppkey
+            JOIN snowflake_sample_data.tpch_sf1.part
+                ON ps_partkey=p_partkey
+)
+
+SELECT
+s_suppkey as supplier_key,
+s_name as supplier_name,
+s_nationkey as nation_key,
+s_acctbal as account_balance,
+ps_availqty as available_quantity,
+ps_supplycost as supply_cost,
+p_partkey as part_key,
+p_name as part_name,
+p_mfgr as part_manufacturer,
+p_brand as part_brand,
+p_type as part_type,
+p_size as part_size,
+p_container as part_container,
+p_retailprice as part_retail_price
+    FROM supplier_parts
+),  __dbt__CTE__average_supply_cost_and_available_quantity_per_part as (
+/*
+Modifications © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+SELECT
+part_key,
+avg(available_quantity) as average_available_quantity,
+avg(supply_cost) as average_supply_cost
+    FROM __dbt__CTE__supplier_parts
+        GROUP BY
+        part_key
+)/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+SELECT
+sp.*,
+ascaqsp.average_available_quantity,
+ascaqsp.average_supply_cost
+    FROM __dbt__CTE__supplier_parts as sp
+        JOIN __dbt__CTE__average_supply_cost_and_available_quantity_per_part as ascaqsp
+        ON
+        ascaqsp.part_key = sp.part_key
+      );
+2020-11-28 05:01:11.092572 (Thread-1): Snowflake query id: 0198906d-0420-2183-0000-001ebb837245
+2020-11-28 05:01:11.092789 (Thread-1): Snowflake error: 003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+2020-11-28 05:01:11.092997 (Thread-1): finished collecting timing info
+2020-11-28 05:01:11.093311 (Thread-1): On model.crypto_package.supplier_parts_aggregates: ROLLBACK
+2020-11-28 05:01:11.653512 (Thread-1): On model.crypto_package.supplier_parts_aggregates: Close
+2020-11-28 05:01:11.785828 (Thread-1): Database Error in model supplier_parts_aggregates (models/tpc_h/supplier_parts_aggregates.sql)
+  003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+  compiled SQL at dev/run/crypto_package/models/tpc_h/supplier_parts_aggregates.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 161, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 78, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 594, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 123, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 83, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 123, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 309, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 86, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.18.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 178, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model supplier_parts_aggregates (models/tpc_h/supplier_parts_aggregates.sql)
+  003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+  compiled SQL at dev/run/crypto_package/models/tpc_h/supplier_parts_aggregates.sql
+2020-11-28 05:01:11.786814 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e518d755-db64-44ae-8c77-6bee3e06fd2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c7c7bb0>]}
+2020-11-28 05:01:11.788567 (Thread-1): 21:01:11 | 2 of 3 ERROR creating table model TPCH_SF1.supplier_parts_aggregates. [ERROR in 1.78s]
+2020-11-28 05:01:11.788772 (Thread-1): Finished running node model.crypto_package.supplier_parts_aggregates
+2020-11-28 05:01:11.789444 (Thread-1): Began running node model.crypto_package.analytics_view
+2020-11-28 05:01:11.789713 (Thread-1): 21:01:11 | 3 of 3 SKIP relation TPCH_SF1.analytics_view......................... [SKIP]
+2020-11-28 05:01:11.789881 (Thread-1): Finished running node model.crypto_package.analytics_view
+2020-11-28 05:01:11.790963 (MainThread): Acquiring new snowflake connection "master".
+2020-11-28 05:01:11.791217 (MainThread): Using snowflake connection "master".
+2020-11-28 05:01:11.791336 (MainThread): On master: BEGIN
+2020-11-28 05:01:11.791452 (MainThread): Opening a new connection, currently in state closed
+2020-11-28 05:01:12.403865 (MainThread): SQL status: SUCCESS 1 in 0.61 seconds
+2020-11-28 05:01:12.404216 (MainThread): On master: COMMIT
+2020-11-28 05:01:12.404531 (MainThread): Using snowflake connection "master".
+2020-11-28 05:01:12.404714 (MainThread): On master: COMMIT
+2020-11-28 05:01:12.575198 (MainThread): SQL status: SUCCESS 1 in 0.17 seconds
+2020-11-28 05:01:12.575556 (MainThread): On master: Close
+2020-11-28 05:01:12.745827 (MainThread): 21:01:12 | 
+2020-11-28 05:01:12.746087 (MainThread): 21:01:12 | Finished running 2 table models, 1 view model in 8.25s.
+2020-11-28 05:01:12.746258 (MainThread): Connection 'master' was properly closed.
+2020-11-28 05:01:12.746388 (MainThread): Connection 'model.crypto_package.supplier_parts_aggregates' was properly closed.
+2020-11-28 05:01:12.756820 (MainThread): 
+2020-11-28 05:01:12.756962 (MainThread): Completed with 2 errors and 0 warnings:
+2020-11-28 05:01:12.757137 (MainThread): 
+2020-11-28 05:01:12.757314 (MainThread): Database Error in model customer_nation_region_aggregates (models/tpc_h/customer_nation_region_aggregates.sql)
+2020-11-28 05:01:12.757465 (MainThread):   003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+2020-11-28 05:01:12.757597 (MainThread):   compiled SQL at dev/run/crypto_package/models/tpc_h/customer_nation_region_aggregates.sql
+2020-11-28 05:01:12.757758 (MainThread): 
+2020-11-28 05:01:12.757922 (MainThread): Database Error in model supplier_parts_aggregates (models/tpc_h/supplier_parts_aggregates.sql)
+2020-11-28 05:01:12.758049 (MainThread):   003540 (42501): SQL execution error: Creating table on shared database 'SNOWFLAKE_SAMPLE_DATA' is not allowed.
+2020-11-28 05:01:12.758160 (MainThread):   compiled SQL at dev/run/crypto_package/models/tpc_h/supplier_parts_aggregates.sql
+2020-11-28 05:01:12.758278 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=2 SKIP=1 TOTAL=3
+2020-11-28 05:01:12.758496 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc5b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc5bc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc5b430>]}
+2020-11-28 05:01:12.758689 (MainThread): Flushing usage events
+2020-11-28 05:38:14.319685 (MainThread): Running with dbt=0.18.1
+2020-11-28 05:38:14.431333 (MainThread): Loading KWallet
+2020-11-28 05:38:14.432113 (MainThread): Loading SecretService
+2020-11-28 05:38:14.432706 (MainThread): Loading Windows
+2020-11-28 05:38:14.433427 (MainThread): Loading chainer
+2020-11-28 05:38:14.433799 (MainThread): Loading macOS
+2020-11-28 05:38:14.862266 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/tgraham/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-11-28 05:38:14.863992 (MainThread): Tracking: tracking
+2020-11-28 05:38:14.864334 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103432a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10361d5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10361d9d0>]}
+2020-11-28 05:38:14.890802 (MainThread): Partial parsing not enabled
+2020-11-28 05:38:14.892063 (MainThread): Parsing macros/catalog.sql
+2020-11-28 05:38:14.894865 (MainThread): Parsing macros/adapters.sql
+2020-11-28 05:38:14.929481 (MainThread): Parsing macros/materializations/merge.sql
+2020-11-28 05:38:14.931849 (MainThread): Parsing macros/materializations/view.sql
+2020-11-28 05:38:14.933540 (MainThread): Parsing macros/materializations/table.sql
+2020-11-28 05:38:14.938129 (MainThread): Parsing macros/materializations/incremental.sql
+2020-11-28 05:38:14.951494 (MainThread): Parsing macros/core.sql
+2020-11-28 05:38:14.955727 (MainThread): Parsing macros/materializations/helpers.sql
+2020-11-28 05:38:14.965946 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-28 05:38:14.967967 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-28 05:38:14.987354 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-28 05:38:15.021131 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-11-28 05:38:15.045207 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-11-28 05:38:15.047474 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-11-28 05:38:15.055075 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-11-28 05:38:15.071799 (MainThread): Parsing macros/materializations/table/table.sql
+2020-11-28 05:38:15.079918 (MainThread): Parsing macros/materializations/view/view.sql
+2020-11-28 05:38:15.087432 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-28 05:38:15.093738 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-11-28 05:38:15.095069 (MainThread): Parsing macros/etc/query.sql
+2020-11-28 05:38:15.096453 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-11-28 05:38:15.098474 (MainThread): Parsing macros/etc/datetime.sql
+2020-11-28 05:38:15.109109 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-11-28 05:38:15.111591 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-11-28 05:38:15.113652 (MainThread): Parsing macros/adapters/common.sql
+2020-11-28 05:38:15.165509 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-11-28 05:38:15.167848 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-11-28 05:38:15.169708 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-11-28 05:38:15.171781 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-11-28 05:38:15.180950 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - crypto_package
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+
+2020-11-28 05:38:15.181185 (MainThread): Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8c8e068f-954c-4933-b326-79d7e08f41b1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103432a60>]}
+2020-11-28 05:38:15.181872 (MainThread): Partial parsing not enabled
+2020-11-28 05:38:15.234699 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-28 05:38:15.256612 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:38:15.265935 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-28 05:38:15.273217 (MainThread): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-28 05:38:15.280700 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-28 05:38:15.288935 (MainThread): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:38:15.298584 (MainThread): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-28 05:38:15.307323 (MainThread): Acquiring new snowflake connection "model.crypto_package.analytics_view".
+2020-11-28 05:38:15.326693 (MainThread): Acquiring new snowflake connection "test.crypto_package.assert_averages_are_unique".
+2020-11-28 05:38:15.655424 (MainThread): Found 8 models, 9 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources
+2020-11-28 05:38:15.657093 (MainThread): 
+2020-11-28 05:38:15.657521 (MainThread): Acquiring new snowflake connection "master".
+2020-11-28 05:38:15.661849 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DBT".
+2020-11-28 05:38:15.677389 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DBT".
+2020-11-28 05:38:15.677579 (ThreadPoolExecutor-0_0): On list_DBT: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "connection_name": "list_DBT"} */
+
+    show terse schemas in database DBT
+    limit 10000
+2020-11-28 05:38:15.677706 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-11-28 05:38:16.623662 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 0.95 seconds
+2020-11-28 05:38:16.627498 (ThreadPoolExecutor-0_0): On list_DBT: Close
+2020-11-28 05:38:16.793523 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DBT_PUBLIC".
+2020-11-28 05:38:16.801175 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DBT_PUBLIC".
+2020-11-28 05:38:16.801298 (ThreadPoolExecutor-1_0): On list_DBT_PUBLIC: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "connection_name": "list_DBT_PUBLIC"} */
+
+    show terse objects in DBT.PUBLIC
+2020-11-28 05:38:16.801405 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-11-28 05:38:17.518638 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 0.72 seconds
+2020-11-28 05:38:17.528737 (ThreadPoolExecutor-1_0): On list_DBT_PUBLIC: Close
+2020-11-28 05:38:17.649182 (MainThread): Using snowflake connection "master".
+2020-11-28 05:38:17.649403 (MainThread): On master: BEGIN
+2020-11-28 05:38:17.649543 (MainThread): Opening a new connection, currently in state init
+2020-11-28 05:38:18.645005 (MainThread): SQL status: SUCCESS 1 in 1.00 seconds
+2020-11-28 05:38:18.645366 (MainThread): On master: COMMIT
+2020-11-28 05:38:18.645689 (MainThread): Using snowflake connection "master".
+2020-11-28 05:38:18.645870 (MainThread): On master: COMMIT
+2020-11-28 05:38:18.831917 (MainThread): SQL status: SUCCESS 1 in 0.19 seconds
+2020-11-28 05:38:18.832268 (MainThread): On master: Close
+2020-11-28 05:38:18.963377 (MainThread): 21:38:18 | Concurrency: 1 threads (target='dev')
+2020-11-28 05:38:18.963642 (MainThread): 21:38:18 | 
+2020-11-28 05:38:18.967479 (Thread-1): Began running node model.crypto_package.customer_nation_region
+2020-11-28 05:38:18.967988 (Thread-1): Acquiring new snowflake connection "model.crypto_package.customer_nation_region".
+2020-11-28 05:38:18.968156 (Thread-1): Compiling model.crypto_package.customer_nation_region
+2020-11-28 05:38:18.993361 (Thread-1): Writing injected SQL for node "model.crypto_package.customer_nation_region"
+2020-11-28 05:38:18.993918 (Thread-1): finished collecting timing info
+2020-11-28 05:38:18.994419 (Thread-1): Finished running node model.crypto_package.customer_nation_region
+2020-11-28 05:38:18.994568 (Thread-1): Began running node model.crypto_package.supplier_parts
+2020-11-28 05:38:18.994951 (Thread-1): Acquiring new snowflake connection "model.crypto_package.supplier_parts".
+2020-11-28 05:38:18.995163 (Thread-1): Compiling model.crypto_package.supplier_parts
+2020-11-28 05:38:19.003524 (Thread-1): Writing injected SQL for node "model.crypto_package.supplier_parts"
+2020-11-28 05:38:19.003885 (Thread-1): finished collecting timing info
+2020-11-28 05:38:19.004401 (Thread-1): Finished running node model.crypto_package.supplier_parts
+2020-11-28 05:38:19.004554 (Thread-1): Began running node model.crypto_package.average_acctbal_by_nation
+2020-11-28 05:38:19.004990 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_acctbal_by_nation".
+2020-11-28 05:38:19.005289 (Thread-1): Compiling model.crypto_package.average_acctbal_by_nation
+2020-11-28 05:38:19.014906 (Thread-1): Writing injected SQL for node "model.crypto_package.average_acctbal_by_nation"
+2020-11-28 05:38:19.015413 (Thread-1): finished collecting timing info
+2020-11-28 05:38:19.015834 (Thread-1): Finished running node model.crypto_package.average_acctbal_by_nation
+2020-11-28 05:38:19.015994 (Thread-1): Began running node model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-28 05:38:19.016383 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_supply_cost_and_available_quantity_per_part".
+2020-11-28 05:38:19.016629 (Thread-1): Compiling model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-28 05:38:19.027808 (Thread-1): Writing injected SQL for node "model.crypto_package.average_supply_cost_and_available_quantity_per_part"
+2020-11-28 05:38:19.028488 (Thread-1): finished collecting timing info
+2020-11-28 05:38:19.029162 (Thread-1): Finished running node model.crypto_package.average_supply_cost_and_available_quantity_per_part
+2020-11-28 05:38:19.029404 (Thread-1): Began running node model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-28 05:38:19.029932 (Thread-1): Acquiring new snowflake connection "model.crypto_package.average_account_balance_by_part_and_supplier".
+2020-11-28 05:38:19.030221 (Thread-1): Compiling model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-28 05:38:19.042965 (Thread-1): Writing injected SQL for node "model.crypto_package.average_account_balance_by_part_and_supplier"
+2020-11-28 05:38:19.043485 (Thread-1): finished collecting timing info
+2020-11-28 05:38:19.043949 (Thread-1): Finished running node model.crypto_package.average_account_balance_by_part_and_supplier
+2020-11-28 05:38:19.044114 (Thread-1): Began running node model.crypto_package.customer_nation_region_aggregates
+2020-11-28 05:38:19.045275 (Thread-1): 21:38:19 | 1 of 3 START table model PUBLIC.customer_nation_region_aggregates.... [RUN]
+2020-11-28 05:38:19.045568 (Thread-1): Acquiring new snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:38:19.045687 (Thread-1): Compiling model.crypto_package.customer_nation_region_aggregates
+2020-11-28 05:38:19.058907 (Thread-1): Writing injected SQL for node "model.crypto_package.customer_nation_region_aggregates"
+2020-11-28 05:38:19.059460 (Thread-1): finished collecting timing info
+2020-11-28 05:38:19.094881 (Thread-1): Writing runtime SQL for node "model.crypto_package.customer_nation_region_aggregates"
+2020-11-28 05:38:19.097841 (Thread-1): Using snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:38:19.097944 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: BEGIN
+2020-11-28 05:38:19.098040 (Thread-1): Opening a new connection, currently in state closed
+2020-11-28 05:38:19.607059 (Thread-1): SQL status: SUCCESS 1 in 0.51 seconds
+2020-11-28 05:38:19.607384 (Thread-1): Using snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:38:19.607568 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "node_id": "model.crypto_package.customer_nation_region_aggregates"} */
+
+
+      create or replace transient table DBT.PUBLIC.customer_nation_region_aggregates  as
+      (with __dbt__CTE__customer_nation_region as (
+/*
+Modifications © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+With customer_nation_region as (
+  SELECT * from snowflake_sample_data.tpch_sf1.customer
+    JOIN snowflake_sample_data.tpch_sf1.nation
+        ON n_nationkey=c_nationkey
+            JOIN snowflake_sample_data.tpch_sf1.region
+                ON n_regionkey=r_regionkey
+)
+
+SELECT
+r_name as region,
+n_name as nation,
+n_nationkey as nation_key,
+c_name as customer_name,
+c_acctbal as account_balance,
+c_mktsegment as market_segment
+    FROM customer_nation_region
+),  __dbt__CTE__average_acctbal_by_nation as (
+/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+SELECT
+nation_key,
+avg(account_balance) as average_account_balance
+    FROM __dbt__CTE__customer_nation_region
+        GROUP BY
+        nation_key
+)/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+SELECT
+cnr.*,
+aabn.average_account_balance as avg_acct_bal_by_nation
+    FROM __dbt__CTE__customer_nation_region as cnr
+        JOIN __dbt__CTE__average_acctbal_by_nation as aabn
+        ON
+        aabn.nation_key = cnr.nation_key
+      );
+2020-11-28 05:38:21.524935 (Thread-1): SQL status: SUCCESS 1 in 1.92 seconds
+2020-11-28 05:38:21.527055 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: COMMIT
+2020-11-28 05:38:21.527277 (Thread-1): Using snowflake connection "model.crypto_package.customer_nation_region_aggregates".
+2020-11-28 05:38:21.527407 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: COMMIT
+2020-11-28 05:38:21.618138 (Thread-1): SQL status: SUCCESS 1 in 0.09 seconds
+2020-11-28 05:38:21.633884 (Thread-1): finished collecting timing info
+2020-11-28 05:38:21.634150 (Thread-1): On model.crypto_package.customer_nation_region_aggregates: Close
+2020-11-28 05:38:21.760749 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c8e068f-954c-4933-b326-79d7e08f41b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104321310>]}
+2020-11-28 05:38:21.762574 (Thread-1): 21:38:21 | 1 of 3 OK created table model PUBLIC.customer_nation_region_aggregates [SUCCESS 1 in 2.71s]
+2020-11-28 05:38:21.762780 (Thread-1): Finished running node model.crypto_package.customer_nation_region_aggregates
+2020-11-28 05:38:21.762982 (Thread-1): Began running node model.crypto_package.supplier_parts_aggregates
+2020-11-28 05:38:21.764421 (Thread-1): 21:38:21 | 2 of 3 START table model PUBLIC.supplier_parts_aggregates............ [RUN]
+2020-11-28 05:38:21.764778 (Thread-1): Acquiring new snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:38:21.764928 (Thread-1): Compiling model.crypto_package.supplier_parts_aggregates
+2020-11-28 05:38:21.780040 (Thread-1): Writing injected SQL for node "model.crypto_package.supplier_parts_aggregates"
+2020-11-28 05:38:21.780620 (Thread-1): finished collecting timing info
+2020-11-28 05:38:21.785359 (Thread-1): Writing runtime SQL for node "model.crypto_package.supplier_parts_aggregates"
+2020-11-28 05:38:21.788775 (Thread-1): Using snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:38:21.788918 (Thread-1): On model.crypto_package.supplier_parts_aggregates: BEGIN
+2020-11-28 05:38:21.789029 (Thread-1): Opening a new connection, currently in state closed
+2020-11-28 05:38:22.767267 (Thread-1): SQL status: SUCCESS 1 in 0.98 seconds
+2020-11-28 05:38:22.767594 (Thread-1): Using snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:38:22.767778 (Thread-1): On model.crypto_package.supplier_parts_aggregates: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "node_id": "model.crypto_package.supplier_parts_aggregates"} */
+
+
+      create or replace transient table DBT.PUBLIC.supplier_parts_aggregates  as
+      (with __dbt__CTE__supplier_parts as (
+/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+With supplier_parts as (
+  SELECT * from snowflake_sample_data.tpch_sf1.supplier
+    JOIN snowflake_sample_data.tpch_sf1.partsupp
+        ON s_suppkey=ps_suppkey
+            JOIN snowflake_sample_data.tpch_sf1.part
+                ON ps_partkey=p_partkey
+)
+
+SELECT
+s_suppkey as supplier_key,
+s_name as supplier_name,
+s_nationkey as nation_key,
+s_acctbal as account_balance,
+ps_availqty as available_quantity,
+ps_supplycost as supply_cost,
+p_partkey as part_key,
+p_name as part_name,
+p_mfgr as part_manufacturer,
+p_brand as part_brand,
+p_type as part_type,
+p_size as part_size,
+p_container as part_container,
+p_retailprice as part_retail_price
+    FROM supplier_parts
+),  __dbt__CTE__average_supply_cost_and_available_quantity_per_part as (
+/*
+Modifications © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+SELECT
+part_key,
+avg(available_quantity) as average_available_quantity,
+avg(supply_cost) as average_supply_cost
+    FROM __dbt__CTE__supplier_parts
+        GROUP BY
+        part_key
+)/*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+SELECT
+sp.*,
+ascaqsp.average_available_quantity,
+ascaqsp.average_supply_cost
+    FROM __dbt__CTE__supplier_parts as sp
+        JOIN __dbt__CTE__average_supply_cost_and_available_quantity_per_part as ascaqsp
+        ON
+        ascaqsp.part_key = sp.part_key
+      );
+2020-11-28 05:38:25.482790 (Thread-1): SQL status: SUCCESS 1 in 2.71 seconds
+2020-11-28 05:38:25.483908 (Thread-1): On model.crypto_package.supplier_parts_aggregates: COMMIT
+2020-11-28 05:38:25.484068 (Thread-1): Using snowflake connection "model.crypto_package.supplier_parts_aggregates".
+2020-11-28 05:38:25.484157 (Thread-1): On model.crypto_package.supplier_parts_aggregates: COMMIT
+2020-11-28 05:38:25.570011 (Thread-1): SQL status: SUCCESS 1 in 0.09 seconds
+2020-11-28 05:38:25.572124 (Thread-1): finished collecting timing info
+2020-11-28 05:38:25.572373 (Thread-1): On model.crypto_package.supplier_parts_aggregates: Close
+2020-11-28 05:38:25.800292 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c8e068f-954c-4933-b326-79d7e08f41b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10475ad00>]}
+2020-11-28 05:38:25.801508 (Thread-1): 21:38:25 | 2 of 3 OK created table model PUBLIC.supplier_parts_aggregates....... [SUCCESS 1 in 4.04s]
+2020-11-28 05:38:25.801666 (Thread-1): Finished running node model.crypto_package.supplier_parts_aggregates
+2020-11-28 05:38:25.802203 (Thread-1): Began running node model.crypto_package.analytics_view
+2020-11-28 05:38:25.803359 (Thread-1): 21:38:25 | 3 of 3 START view model PUBLIC.analytics_view........................ [RUN]
+2020-11-28 05:38:25.803760 (Thread-1): Acquiring new snowflake connection "model.crypto_package.analytics_view".
+2020-11-28 05:38:25.803891 (Thread-1): Compiling model.crypto_package.analytics_view
+2020-11-28 05:38:25.815237 (Thread-1): Writing injected SQL for node "model.crypto_package.analytics_view"
+2020-11-28 05:38:25.815747 (Thread-1): finished collecting timing info
+2020-11-28 05:38:25.843968 (Thread-1): Writing runtime SQL for node "model.crypto_package.analytics_view"
+2020-11-28 05:38:25.845908 (Thread-1): Using snowflake connection "model.crypto_package.analytics_view".
+2020-11-28 05:38:25.846010 (Thread-1): On model.crypto_package.analytics_view: BEGIN
+2020-11-28 05:38:25.846108 (Thread-1): Opening a new connection, currently in state closed
+2020-11-28 05:38:26.531351 (Thread-1): SQL status: SUCCESS 1 in 0.69 seconds
+2020-11-28 05:38:26.531536 (Thread-1): Using snowflake connection "model.crypto_package.analytics_view".
+2020-11-28 05:38:26.531624 (Thread-1): On model.crypto_package.analytics_view: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "sf", "target_name": "dev", "node_id": "model.crypto_package.analytics_view"} */
+
+  create or replace  view DBT.PUBLIC.analytics_view  as (
+    /*
+Copyright © 2019 Hashmap, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
+
+select
+spa.supplier_name,
+spa.account_balance as supplier_account_balance,
+cnra.account_balance as customer_account_balance,
+cnra.avg_acct_bal_by_nation as average_account_balance_by_nation,
+spa.available_quantity,
+spa.average_available_quantity,
+spa.supply_cost,
+spa.average_supply_cost,
+spa.part_name,
+spa.part_manufacturer,
+spa.part_brand,
+spa.part_type,
+spa.part_size,
+cnra.nation,
+cnra.region,
+cnra.market_segment,
+cnra.customer_name
+    FROM DBT.PUBLIC.supplier_parts_aggregates as spa
+        JOIN DBT.PUBLIC.customer_nation_region_aggregates as cnra
+        ON
+        spa.nation_key = cnra.nation_key
+  );
+2020-11-28 05:38:27.252693 (Thread-1): SQL status: SUCCESS 1 in 0.72 seconds
+2020-11-28 05:38:27.253926 (Thread-1): On model.crypto_package.analytics_view: COMMIT
+2020-11-28 05:38:27.254120 (Thread-1): Using snowflake connection "model.crypto_package.analytics_view".
+2020-11-28 05:38:27.254290 (Thread-1): On model.crypto_package.analytics_view: COMMIT
+2020-11-28 05:38:27.340710 (Thread-1): SQL status: SUCCESS 1 in 0.09 seconds
+2020-11-28 05:38:27.344249 (Thread-1): finished collecting timing info
+2020-11-28 05:38:27.344541 (Thread-1): On model.crypto_package.analytics_view: Close
+2020-11-28 05:38:27.464328 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c8e068f-954c-4933-b326-79d7e08f41b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10475a5e0>]}
+2020-11-28 05:38:27.465657 (Thread-1): 21:38:27 | 3 of 3 OK created view model PUBLIC.analytics_view................... [SUCCESS 1 in 1.66s]
+2020-11-28 05:38:27.465826 (Thread-1): Finished running node model.crypto_package.analytics_view
+2020-11-28 05:38:27.466924 (MainThread): Acquiring new snowflake connection "master".
+2020-11-28 05:38:27.467141 (MainThread): Using snowflake connection "master".
+2020-11-28 05:38:27.467244 (MainThread): On master: BEGIN
+2020-11-28 05:38:27.467340 (MainThread): Opening a new connection, currently in state closed
+2020-11-28 05:38:28.162813 (MainThread): SQL status: SUCCESS 1 in 0.70 seconds
+2020-11-28 05:38:28.163011 (MainThread): On master: COMMIT
+2020-11-28 05:38:28.163169 (MainThread): Using snowflake connection "master".
+2020-11-28 05:38:28.163258 (MainThread): On master: COMMIT
+2020-11-28 05:38:28.347178 (MainThread): SQL status: SUCCESS 1 in 0.18 seconds
+2020-11-28 05:38:28.347386 (MainThread): On master: Close
+2020-11-28 05:38:28.481520 (MainThread): 21:38:28 | 
+2020-11-28 05:38:28.481736 (MainThread): 21:38:28 | Finished running 2 table models, 1 view model in 12.82s.
+2020-11-28 05:38:28.481850 (MainThread): Connection 'master' was properly closed.
+2020-11-28 05:38:28.481934 (MainThread): Connection 'model.crypto_package.analytics_view' was properly closed.
+2020-11-28 05:38:28.492354 (MainThread): 
+2020-11-28 05:38:28.492575 (MainThread): Completed successfully
+2020-11-28 05:38:28.492808 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2020-11-28 05:38:28.493108 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10475cee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104328f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104328b50>]}
+2020-11-28 05:38:28.493487 (MainThread): Flushing usage events
